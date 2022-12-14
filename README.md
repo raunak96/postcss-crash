@@ -20,5 +20,7 @@
 ## Using Plugins
 - First we install the npm package of required plugin as dev dependency.
 - Then, we make [postcss.config.js](postcss.config.js) file, where we import and then export the plugins to be used.
-   1. ### AutoPrefixer
+   1. ### autoPrefixer
       -  plugin to parse CSS and add vendor prefixes to CSS rules. For example `::placeholder` property is not fully supported by all browsers, so we in normal css would have to manually provider vendor `webkits` like `moz`, `ms` for Firefox, Edge etc. With this plugin, we don't need to do so, postcss will automatically add these.
+   2. ### postcss-preset-env
+      - It allows use to use `modern css` by converting them to something most browsers can understand. Like: `custom-selector`, `custom-media` queries and `nested css`.

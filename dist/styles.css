@@ -1,5 +1,19 @@
+/* Define custom media query for specified condition. In this case, for width<=500px, we call that query viewport-small(can be called anything)  */
+
 body {
 	background-color: #fefefe;
+	max-width: 800px;
+}
+
+@media (max-width: 500px) {
+
+body {
+		max-width: 450px;
+}
+	}
+
+body {
+	margin: 20px auto;
 }
 input::-moz-placeholder {
 	color: slategray;
@@ -7,3 +21,22 @@ input::-moz-placeholder {
 input::placeholder {
 	color: slategray;
 }
+
+h1,h2,h3,h4,h5,h6 {
+	font-size: 3rem;
+}
+
+@media (max-width: 500px) {
+
+h1,h2,h3,h4,h5,h6 {
+		font-size: 2rem;
+}
+	}
+
+h1,h2,h3,h4,h5,h6 {
+	color: #dd3a0a;
+}
+.card h2 {
+		color: steelblue;
+		font-size: 2rem;
+	}
