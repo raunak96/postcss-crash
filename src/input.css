@@ -1,3 +1,6 @@
 body {
 	background-color: #fefefe;
 }
+input::placeholder {
+	color: slategray;
+}
