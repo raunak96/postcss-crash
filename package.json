@@ -1,0 +1,17 @@
+{
+    "name": "postcss-crash",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build:css": "postcss src/input.css -o dist/styles.css",
+        "watch:css": "postcss src/input.css -o dist/styles.css -w"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "postcss": "^8.4.20",
+        "postcss-cli": "^10.1.0"
+    }
+}
