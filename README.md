@@ -28,3 +28,7 @@
       - It allows to use `Sass-like` markup and staged CSS features in CSS. 
    4. ### postcss-import
       - It allows to import local css files in another css file. In our case, we have made 2 css files. One called [vars.css](src/vars.css) where we store all `sass variables` and [card.css](src/card.css) where all card styles are present. These are then imported to [input.css](src/input.css) file. 
+   5. ### postcss-assets
+      - It is an asset manager for CSS. It isolates stylesheets from environmental changes, gets image sizes and inlines files. 
+      - In `loadPaths` in [postcss.config.js](postcss.config.js), we specify paths where postcss will search for asset files.
+      - It provides properties like `width`, `height` etc of image allowing us to use it in css (For eg set container dimension same as background image).

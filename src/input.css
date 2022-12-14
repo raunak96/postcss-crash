@@ -3,7 +3,7 @@
 /* vars imported at top so that other files can also use it */
 @import "card";
 /* postcss-preset-env plugin allows to use these custom selectors and queries  */
-@custom-selector: --heading h1,h2, h3, h4, h5, h6;
+@custom-selector :--heading h1, h2, h3, h4, h5, h6;
 /* Define custom media query for specified condition. In this case, for width<=500px, we call that query viewport-small(can be called anything)  */
 @custom-media --viewport-small (width <= 500px);
 

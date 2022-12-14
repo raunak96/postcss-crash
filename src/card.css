@@ -1,10 +1,15 @@
 .card {
-	padding: 20px;
 	margin-top: 20px;
 	border: $borderWidth solid $borderColor;
-	width: 300px;
+	/* Set card height,width same as image. Got this property from postcss-assets */
+	width: width("hero.jpg");
+	height: height("hero.jpg");
+	background-image: resolve("hero.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
 	h2 {
-		color: steelblue;
+		color: blanchedalmond;
 		font-size: 2rem;
 	}
 }

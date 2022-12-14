@@ -1,17 +1,21 @@
 /* postcss-import allows to import local files inline */
 /* vars imported at top so that other files can also use it */
 .card {
-	padding: 20px;
 	margin-top: 20px;
 	border: 2px solid #000;
-	width: 300px;
+	/* Set card height,width same as image. Got this property from postcss-assets */
+	width: 600px;
+	height: 193px;
+	background-image: url('/dist/images/hero.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
 }
 .card h2 {
-		color: steelblue;
+		color: blanchedalmond;
 		font-size: 2rem;
 	}
 /* postcss-preset-env plugin allows to use these custom selectors and queries  */
-@custom-selector: --heading h1,h2, h3, h4, h5, h6;
 /* Define custom media query for specified condition. In this case, for width<=500px, we call that query viewport-small(can be called anything)  */
 /* precss allows to use Sass like features, for example sass variables */
 body {
