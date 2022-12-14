@@ -4,14 +4,15 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "build:css": "postcss src/input.css -o dist/styles.css",
-        "watch:css": "postcss src/input.css -o dist/styles.css -w"
+        "build:css": "postcss src/input.css -o dist/styles.min.css",
+        "watch:css": "postcss src/input.css -o dist/styles.min.css -w"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "devDependencies": {
         "autoprefixer": "^10.4.13",
+        "cssnano": "^5.1.14",
         "postcss": "^8.4.20",
         "postcss-assets": "^6.0.0",
         "postcss-cli": "^10.1.0",

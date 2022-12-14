@@ -32,3 +32,6 @@
       - It is an asset manager for CSS. It isolates stylesheets from environmental changes, gets image sizes and inlines files. 
       - In `loadPaths` in [postcss.config.js](postcss.config.js), we specify paths where postcss will search for asset files.
       - It provides properties like `width`, `height` etc of image allowing us to use it in css (For eg set container dimension same as background image).
+
+    6. ### cssnano
+       - It minifies the output css like this: [styles.min.css](dist/styles.min.css). 

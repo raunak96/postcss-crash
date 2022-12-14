@@ -5,5 +5,8 @@ module.exports = {
 		require("precss"),
 		require("postcss-import"),
 		require("postcss-assets")({ loadPaths: ["dist/images"] }),
+		require("cssnano")({
+			preset: "default",
+		}),
 	],
 };
