@@ -1,13 +1,17 @@
+/* postcss-import allows to import local files inline */
+@import "vars";
+/* vars imported at top so that other files can also use it */
+@import "card";
 /* postcss-preset-env plugin allows to use these custom selectors and queries  */
-@custom-selector :--heading h1, h2, h3, h4, h5, h6;
+@custom-selector: --heading h1,h2, h3, h4, h5, h6;
 /* Define custom media query for specified condition. In this case, for width<=500px, we call that query viewport-small(can be called anything)  */
 @custom-media --viewport-small (width <= 500px);
 
 /* precss allows to use Sass like features, for example sass variables */
-$light-color: #faf8f5;
 body {
-	background-color: $light-color;
+	background-color: $lightColor;
 	max-width: 800px;
+	padding: 0 20px;
 	@media (--viewport-small) {
 		max-width: 450px;
 	}
@@ -23,10 +27,4 @@ input::placeholder {
 		font-size: 2rem;
 	}
 	color: #dd3a0a;
-}
-.card {
-	h2 {
-		color: steelblue;
-		font-size: 2rem;
-	}
 }

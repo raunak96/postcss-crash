@@ -26,3 +26,5 @@
       - It allows use to use `modern css` by converting them to something most browsers can understand. Like: `custom-selector`, `custom-media` queries and `nested css`.
    3. ### precss
       - It allows to use `Sass-like` markup and staged CSS features in CSS. 
+   4. ### postcss-import
+      - It allows to import local css files in another css file. In our case, we have made 2 css files. One called [vars.css](src/vars.css) where we store all `sass variables` and [card.css](src/card.css) where all card styles are present. These are then imported to [input.css](src/input.css) file. 
