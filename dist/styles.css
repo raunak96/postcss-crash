@@ -1,17 +1,16 @@
+/* postcss-preset-env plugin allows to use these custom selectors and queries  */
 /* Define custom media query for specified condition. In this case, for width<=500px, we call that query viewport-small(can be called anything)  */
 
+/* precss allows to use Sass like features, for example sass variables */
 body {
-	background-color: #fefefe;
+	background-color: #faf8f5;
 	max-width: 800px;
 }
-
 @media (max-width: 500px) {
-
 body {
 		max-width: 450px;
 }
 	}
-
 body {
 	margin: 20px auto;
 }
